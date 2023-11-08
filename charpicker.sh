@@ -8,4 +8,4 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-xdotool type --delay 100 "$selected_symbol"
+echo "$selected_symbol" | wl-copy --trim-newline
